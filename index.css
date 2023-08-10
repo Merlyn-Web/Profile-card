@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: [Kumbh Sans]('https://fonts.google.com/specimen/Kumbh+Sans');
+    font-weight: 700;
+}
+
+body {
+    background: url(./images/bg-pattern-top.svg) no-repeat -300px -450px,
+        url(./images/bg-pattern-bottom.svg) no-repeat 650px 400px;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    background-color: hsl(0, 0%, 100%);
+    width: 450px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.victor-img {
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    border: solid 5px #ffffff;
+    position: relative;
+    top: 65px;
+}
+
+.card-top {
+    background: url(./images/bg-pattern-card.svg);
+    height: 130px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-info {
+    margin-top: 30px;
+}
+
+.name,
+.stat {
+    color: hsl(229, 23%, 23%);
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+span,
+.lieu {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+span {
+    font-size: 25px;
+}
+
+.lieu {
+    font-size: 18px;
+}
+
+.card-info {
+    text-align: center;
+}
+
+hr {
+    color: #adadad;
+    opacity: 0.3;
+}
+
+.media {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 80px 0 80px;
+    margin-bottom: 20px;
+}
+
+.media-info {
+    text-align: center;
+}
+
+.ind {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.attribution {
+    text-align: center;
+}
+
+@media screen and (max-width: 490px){
+    .profile-card{
+        width: 350px;
+    }
+
+    .media{
+        margin: 0 40px 0 40px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 386px){
+    .profile-card{
+        width: 330px;
+        height: 400px;
+    }
+
+    .media{
+        margin: 0 40px 0 40px;
+        margin-bottom: 40px;
+    }
+}
